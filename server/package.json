@@ -1,1 +1,13 @@
-
+{
+  "name": "server",
+  "version": "1.0.0",
+  "main": "index.js",
+  "type": "commonjs",
+  "dependencies": {
+    "express": "^4.18.2",
+    "mongoose": "^8.0.0",
+    "cors": "^2.8.5",
+    "shortid": "^2.2.16",
+    "dotenv": "^16.0.0"
+  }
+}
