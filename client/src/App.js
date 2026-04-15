@@ -8,7 +8,7 @@ function App() {
   const handleShorten = async () => {
     try {
       const res = await axios.post(
-        "https://linkforge-nlbw.onrender.com/api/shorten",
+        "https://linkforge-nlbw.onrender.com/shorten",
         { originalUrl: url }
       );
       setShort(res.data.shortUrl);
