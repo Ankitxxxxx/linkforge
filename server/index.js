@@ -6,8 +6,13 @@ const cors = require("cors");
 const path = require("path");
 
 const app = express();
+app.use(cors({
+  origin: "https://linkforge-three-gilt.vercel.app",
+  methods: ["GET", "POST"],
+  credentials: true
+}));
 app.use(express.json());
-app.use(cors());
+
 
 mongoose.connect(process.env.MONGO_URI)
   .then(() => console.log("MongoDB connected"))
